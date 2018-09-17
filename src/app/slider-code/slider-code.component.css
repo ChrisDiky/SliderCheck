@@ -1,0 +1,50 @@
+div{
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 300px;
+}
+.sliderContainer {
+  margin-top: 15px;
+}
+.slider-canvas {
+  z-index: 1;
+}
+.block {
+  z-index: 2;
+  /*filter: saturate(500%);*/
+}
+.slider{
+  text-align: center;
+  margin-left: 0;
+  padding-top: 10px;
+  z-index: 1;
+  background-color: antiquewhite;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  height: 40px;
+}
+.sliderSquare{
+  position: absolute;
+  cursor: pointer;
+  transition: background .2s linear;
+  margin-left: 0;
+  margin-top: -40px;
+  padding-top: 10px;
+  text-align: center;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+}
+
+.sliderCheckSuccess {
+  background-color: aquamarine;
+}
+
+.sliderSquare:hover{
+  background-color: #1991FA;
+}
+
+.slider_Fail {
+  background-color: chocolate;
+}

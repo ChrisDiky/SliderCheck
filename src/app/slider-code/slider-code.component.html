@@ -1,0 +1,12 @@
+<div class="sliderContainer">
+    <canvas #canvas width={{imgWidth}} height={{imgHeight}} class="slider-canvas"></canvas>
+    <canvas #slider width={{imgWidth}} height={{imgHeight}} [style.margin-left]="blockMarginLeft" class="block" id="block"></canvas>
+</div>
+<div>
+  <div #sliderContainer class="slider">
+    <span #text style="user-select: none" >滑动进行验证>></span>
+  </div>
+  <div #square class="sliderSquare" [style.margin-left]="squareMarginLeft" (mousedown)="sliderMouseDown($event)" (mousemove)="sliderMouseMove($event)" (mouseup)="sliderMouseUp($event)">
+    <span style="user-select: none" >→</span>
+  </div>
+</div>
